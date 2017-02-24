@@ -1,1 +1,6 @@
+init:
+- del "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe"
+- dir "C:\Program Files (x86)\Android\android-sdk\platform-tools\"
+- echo %PATH%
+
 test: off
