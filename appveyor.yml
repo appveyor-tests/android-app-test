@@ -1,6 +1,4 @@
-#init:
-#- del "C:\Program Files (x86)\Android\android-sdk\platform-tools\adb.exe"
-#- dir "C:\Program Files (x86)\Android\android-sdk\platform-tools\"
-#- echo %PATH%
+init:
+- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 test: off
